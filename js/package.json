@@ -1,0 +1,15 @@
+{
+  "name": "@nearata/flarum-ext-boilerplate",
+  "version": "0.0.0",
+  "private": true,
+  "devDependencies": {
+    "flarum-tsconfig": "^1.0.2",
+    "flarum-webpack-config": "^2.0.0",
+    "webpack": "^5.76.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "scripts": {
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production"
+  }
+}
