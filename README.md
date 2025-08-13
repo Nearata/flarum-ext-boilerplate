@@ -5,5 +5,5 @@
 ## Install
 
 ```sh
-composer require nearata/flarum-boilerplate
+composer require nearata/flarum-ext-boilerplate
 ```
