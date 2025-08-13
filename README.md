@@ -1,9 +1,9 @@
-# EXT NAME
+# boilerplate
 
-> description
+> boilerplate
 
 ## Install
 
 ```sh
-composer require nearata/flarum-EXT_NAME
+composer require nearata/flarum-boilerplate
 ```

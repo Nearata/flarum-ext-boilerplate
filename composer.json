@@ -1,13 +1,13 @@
 {
     "name": "nearata/flarum-ext-boilerplate",
-    "description": "CHANGEME",
+    "description": "boilerplate",
     "keywords": [
         "flarum"
     ],
     "type": "flarum-extension",
-    "license": "MIT",
+    "license": "Unlicense",
     "support": {
-        "source": "https://github.com/Nearata/flarum-CHANGEME"
+        "source": "https://github.com/Nearata/flarum-boilerplate"
     },
     "require": {
         "flarum/core": "^1.8.0"
@@ -25,10 +25,10 @@
     },
     "extra": {
         "flarum-extension": {
-            "title": "CHANGEME",
+            "title": "boilerplate",
             "category": "feature",
             "icon": {
-                "name": "fas fa-CHANGEME",
+                "name": "fas fa-boilerplate",
                 "backgroundColor": "#fff",
                 "color": "#000"
             }
