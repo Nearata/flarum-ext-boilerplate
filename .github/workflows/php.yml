@@ -7,5 +7,17 @@ jobs:
       enable_backend_testing: false
       enable_phpstan: true
       php_versions: '["8.1", "8.2", "8.3", "8.4"]'
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '["8.1", "8.2", "8.3", "8.4"]'
+          extensions: json, dom, curl, libxml, mbstring
+          coverage: none
+      - run: composer global require laravel/pint
+      - run: pint
+      - uses: stefanzweifel/git-auto-commit-action@v5
 permissions:
   contents: 'write'
