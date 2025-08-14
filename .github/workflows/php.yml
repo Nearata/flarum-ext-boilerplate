@@ -1,13 +1,13 @@
 name: php
 on: [workflow_dispatch, push, pull_request]
 jobs:
-  run:
+  flarum:
     uses: flarum/framework/.github/workflows/REUSABLE_backend.yml@v1.8.10
     with:
       enable_backend_testing: false
       enable_phpstan: true
       php_versions: '["8.1", "8.2", "8.3", "8.4"]'
-  lint:
+  codestyle:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -20,9 +20,6 @@ jobs:
           extensions: json, dom, curl, libxml, mbstring
           coverage: none
       - run: composer global require laravel/pint
-      - run: pint
-      - uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_user_name: php (lint)
+      - run: pint --test
 permissions:
-  contents: 'write'
+  contents: 'read'

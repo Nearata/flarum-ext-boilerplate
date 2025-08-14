@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "devDependencies": {
+    "@biomejs/biome": "2.2.0",
     "flarum-tsconfig": "^1.0.2",
     "flarum-webpack-config": "^2.0.0",
     "webpack": "^5.76.0",
@@ -10,6 +11,7 @@
   },
   "scripts": {
     "dev": "webpack --mode development --watch",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "test": "biome check --write src"
   }
 }
