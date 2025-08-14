@@ -2,6 +2,7 @@ name: js
 on: [workflow_dispatch, push, pull_request]
 jobs:
   build:
+    needs: quality
     uses: flarum/framework/.github/workflows/REUSABLE_frontend.yml@main
     with:
       js_package_manager: npm
@@ -12,6 +13,6 @@ jobs:
       - uses: biomejs/setup-biome@v2
         with:
           version: latest
-      - run: biome ci js/src
+      - run: biome ci js/
 permissions:
   contents: 'write'
