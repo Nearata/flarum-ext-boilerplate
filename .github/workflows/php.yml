@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        php: [8.1, 8.2, 8.3, 8.4]
+        php: [8.1]
     steps:
       - uses: actions/checkout@v4
       - uses: shivammathur/setup-php@v2
@@ -22,5 +22,7 @@ jobs:
       - run: composer global require laravel/pint
       - run: pint
       - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_user_name: php (lint)
 permissions:
   contents: 'write'
