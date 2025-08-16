@@ -1,0 +1,2 @@
+(()=>{var e={n:r=>{var a=r&&r.__esModule?()=>r.default:()=>r;return e.d(a,{a}),a},d:(r,a)=>{for(var t in a)e.o(a,t)&&!e.o(r,t)&&Object.defineProperty(r,t,{enumerable:!0,get:a[t]})},o:(e,r)=>Object.prototype.hasOwnProperty.call(e,r)};(()=>{"use strict";const r=flarum.core.compat["admin/app"];e.n(r)().initializers.add("nearata-boilerplate",function(){})})(),module.exports={}})();
+//# sourceMappingURL=admin.js.map
