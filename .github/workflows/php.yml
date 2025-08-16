@@ -20,6 +20,6 @@ jobs:
           extensions: json, dom, curl, libxml, mbstring
           coverage: none
       - run: composer global require laravel/pint
-      - run: pint --test --dirty
+      - run: pint --test
 permissions:
   contents: 'read'

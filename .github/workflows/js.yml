@@ -13,6 +13,6 @@ jobs:
       - uses: biomejs/setup-biome@v2
         with:
           version: latest
-      - run: biome ci --changed --since=main --no-errors-on-unmatched js/src/.
+      - run: biome ci js/src/.
 permissions:
   contents: 'write'
