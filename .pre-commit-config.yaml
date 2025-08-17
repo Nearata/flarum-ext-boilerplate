@@ -1,0 +1,13 @@
+repos:
+  - repo: https://github.com/biomejs/pre-commit
+    rev: v2.2.0 # Use the sha / tag you want to point at
+    hooks:
+      - id: biome-check
+        name: check js
+        files: ^js/src
+  - repo: local
+    hooks:
+      - id: pint
+        name: check php
+        language: system
+        entry: composer format
