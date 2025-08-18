@@ -1,6 +1,5 @@
 {
   "name": "@nearata/flarum-ext-boilerplate",
-  "version": "0.0.0",
   "private": true,
   "devDependencies": {
     "@biomejs/biome": "2.2.0",
